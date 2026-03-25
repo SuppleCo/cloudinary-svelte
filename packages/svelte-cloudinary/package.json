@@ -56,7 +56,7 @@
 	"type": "module",
 	"dependencies": {
 		"@cloudinary-util/types": "^1.6.0",
-		"@cloudinary-util/url-loader": "^5.10.6",
+		"@cloudinary-util/url-loader": "^6.2.0",
 		"@cloudinary-util/util": "^4.2.0",
 		"@unpic/svelte": "0.0.53",
 		"defu": "^6.1.4"
