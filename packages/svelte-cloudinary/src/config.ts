@@ -1,5 +1,5 @@
 import { VERSION as SVELTE_CLOUDINARY_VERSION } from './version';
-import { VERSION as SVELTE_VERSION } from 'svelte/compiler';
+import { VERSION as SVELTE_VERSION } from 'svelte';
 import { setContext, getContext } from 'svelte';
 import { klona } from './internal/klona';
 import { defu } from 'defu';
@@ -10,7 +10,8 @@ import type {
 
 const STORE_KEY = 'svelte-cloudinary-v2-config';
 
-function normaliseVersion(version: string) {
+function normaliseVersion(version?: string) {
+	if (!version) return '0.0.0';
 	return version.includes('-') ? version.split('-')[0] : version;
 }
 

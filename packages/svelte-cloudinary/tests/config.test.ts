@@ -13,6 +13,7 @@ vi.mock('svelte', () => {
 	const context = new Map<string, any>();
 
 	return {
+		VERSION: '5.0.0-next.1',
 		getContext(key: string) {
 			return context.get(key);
 		},
